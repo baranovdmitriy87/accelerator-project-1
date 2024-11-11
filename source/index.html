@@ -1,32 +1,65 @@
 <!DOCTYPE html>
 <html lang="ru" data-validate="html">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUPERGYM</title>
-    <link rel="stylesheet" href="sass/style.scss">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SUPERGYM</title>
+  <link rel="stylesheet" href="sass/style.scss">
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="js/script.min.js" as="script">
+  <!-- <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font"> -->
+  <!-- <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font"> -->
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-120.png">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="images/favicons/icon.svg">
+  <link rel="apple-touch-icon" href="images/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
+</head>
 
-  <body class="page-body">
-    <!-- пример использования спрайта -->
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg>
-    <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="hero">hero</div>
-    <div data-test="about">about</div>
-    <div data-test="price">price</div>
-    <div data-test="games">games</div>
-    <div data-test="juri">juri</div>
-    <div data-test="features">features</div>
-    <div data-test="offers">offers</div>
-    <div data-test="faq">faq</div>
-    <div data-test="reviews">reviews</div>
-    <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
-    <script type="module" src="js/main.js"></script>
-  </body>
+<body class="page-body">
+  <!-- пример использования спрайта -->
+  <!-- <img src="/__spritemap#sprite-logo-view" width="100" height="20" alt="Это спрайт">
+  <svg>
+    <use href="/__spritemap#sprite-user"></use>
+  </svg> -->
+  <!-- примеры требуемых атрибутов data-test="*" -->
+  <section class="hero" data-test="hero">
+    <header class="hero__header">
+      <div class="hero__header-wrapper">
+        <div class="hero__logo">
+          <img src="/__spritemap#sprite-logo-view" width="100" height="20" alt="Логотип SUPERGYM">
+        </div>
+        <span class="hero__phone">8 800 555-55-55</span>
+      </div>
+    </header>
+    <div class="hero__content-wrapper">
+      <h1 class="hero__title">Фитнес центр</h1>
+      <p class="hero__subtitle-sity">Омск</p>
+      <p class="hero__description">
+        Тренажёрный зал
+        Групповые занятия
+        Кардио-зона
+      </p>
+    </div>
+    <div class="hero__button">
+      <a class="hero__button-link" href="#">Купить абонемент</a>
+    </div>
+  </section>
+
+  <!--
+  <div data-test="about">about</div>
+  <div data-test="price">price</div>
+  <div data-test="games">games</div>
+  <div data-test="juri">juri</div>
+  <div data-test="features">features</div>
+  <div data-test="offers">offers</div>
+  <div data-test="faq">faq</div>
+  <div data-test="reviews">reviews</div>
+  <div data-test="form">form</div> -->
+
+  <div data-test="footer">footer</div>
+  <script type="module" src="js/main.js"></script>
+</body>
 
 </html>
