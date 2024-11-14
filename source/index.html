@@ -4,12 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SUPERGYM</title>
+  <title>Supergym - фитнес-центр в Омске</title>
   <link rel="stylesheet" href="sass/style.scss">
   <link rel="preload" href="css/style.min.css" as="style">
   <link rel="preload" href="js/script.min.js" as="script">
-  <!-- <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font"> -->
-  <!-- <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font"> -->
+  <link rel="preload" as="font" href="./fonts/AlumniSans-ExtraBold.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/AlumniSans-SemiBold.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/AlumniSans-Bold.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Roboto-CondensedBold.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Roboto-Light.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Roboto-CondensedRegular.woff2" type="font/woff2" crossorigin="anonymous">
+  <!-- <link rel="preload" href="fonts/Roboto-Condensed.woff2" as="font">
+  <link rel="preload" href="fonts/AlumniSans.woff2" as="font"> -->
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-120.png">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/svg+xml" href="images/favicons/icon.svg">
@@ -25,25 +31,26 @@
   </svg> -->
   <!-- примеры требуемых атрибутов data-test="*" -->
   <section class="hero" data-test="hero">
-    <header class="hero__header">
+    <header class="hero__header container">
       <div class="hero__header-wrapper">
-        <div class="hero__logo">
-          <img class="hero__logo-img" src="/__spritemap#sprite-logo-view" width="100" height="20" alt="Логотип SUPERGYM">
+        <div class="hero__header-logo">
+          <img class="hero__header-logo" src="/__spritemap#sprite-logo-view" width="100" height="20"
+            aria-label="Логотип компании." loading="lazy">
         </div>
-        <span class="hero__phone">8 800 555-55-55</span>
+        <a href="tel:88005555555" class="hero__header-phone">8 800 555-55-55</a>
       </div>
     </header>
-    <div class="hero__content-wrapper">
+    <div class="hero__content-wrapper container">
       <h1 class="hero__title">Фитнес центр</h1>
       <p class="hero__subtitle-sity">Омск</p>
-      <p class="hero__description">
-        Тренажёрный зал
-        Групповые занятия
-        Кардио-зона
-      </p>
+      <ul class="hero__list">
+        <li class="hero__item">Тренажёрный зал</li>
+        <li class="hero__item">Групповые занятия</li>
+        <li class="hero__item">Кардио-зона</li>
+      </ul>
     </div>
     <div class="hero__button">
-      <a class="hero__button-link" href="#">Купить абонемент</a>
+      <a class="hero__button-link button" href="#">Купить абонемент</a>
     </div>
   </section>
 
@@ -58,7 +65,63 @@
   <div data-test="reviews">reviews</div>
   <div data-test="form">form</div> -->
 
-  <div data-test="footer">footer</div>
+  <footer class="footer" data-test="footer">
+    <div class="container footer__container">
+      <nav class="footer__nav">
+        <div class="hero__footer-logo">
+          <img class="hero__footer-logo" src="/__spritemap#sprite-logo-view" width="100" height="20"
+            aria-label="Логотип компании." loading="lazy">
+        </div>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#" class="footer__item-link">Услуги</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__item-link">Абонементы</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__item-link">Акции</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__item-link">Тренеры</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__item-link">Расписание</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="footer__socials">
+        <li class="footer__socials-item">
+          <a href="https://vk.com" class="footer__socials-link" target="_blank">
+            <svg class="footer__socials-icon footer__socials-icon--vk" width="25" height="25" role="img"
+              aria-label="Вконтакте.">
+              <use href="/__spritemap#sprite-vk-view"></use>
+
+              <!-- <use xlink:href="./img/sprite.svg#vk"></use> -->
+            </svg>
+          </a>
+        </li>
+        <li class="footer__socials-item">
+          <a href="https://ok.ru" class="footer__socials-link" target="_blank">
+            <svg class="footer__socials-icon footer__socials-icon--ok" width="25" height="25" role="img"
+              aria-label="Одноклассники.">
+              <use href="/__spritemap#sprite-ok-view"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__socials-item">
+          <a href="https://www.reddit.com" class="footer__socials-link" target="_blank">
+            <svg class="footer__socials-icon footer__socials-icon--reddit" width="25" height="25" role="img"
+              aria-label="Reddit.">
+              <use href="/__spritemap#sprite-reddit-view"></use>
+
+              <!-- <use xlink:href="./img/sprite.svg#reddit"></use> -->
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
   <script type="module" src="js/main.js"></script>
 </body>
 

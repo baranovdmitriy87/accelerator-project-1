@@ -1,0 +1,57 @@
+.footer__container {
+  background: $bg-footer;
+}
+
+.hero__footer-logo {
+  object-fit: cover;
+}
+
+.footer__socials {
+  @include list-reset
+}
+
+.footer__socials-icon {
+  display: block;
+
+  &--vk {
+    background-image: url("/__spritemap#sprite-vk-view");
+  }
+
+  &--ok {
+    background-image: url("/__spritemap#sprite-ok-view");
+  }
+
+  &--reddit {
+    background-image: url("/__spritemap#sprite-reddit-view");
+  }
+}
+
+// .footer__socials-icon--vk {
+//   width: 25px;
+//   height: 25px;
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   display: block;
+//   background-image: url("/__spritemap#sprite-vk-view");
+//   // background-color: black;
+// }
+
+// .footer__socials-icon--ok {
+//   width: 25px;
+//   height: 25px;
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   display: block;
+//   background-image: url("/__spritemap#sprite-ok-view");
+//   // background-color: black;
+// }
+
+// .footer__socials-icon--reddit {
+//   width: 25px;
+//   height: 25px;
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   display: block;
+//   background-image: url("/__spritemap#sprite-reddit-view");
+//   // background-color: black;
+// }

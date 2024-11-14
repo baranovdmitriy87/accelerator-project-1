@@ -1,20 +1,28 @@
 .hero {
-  padding: 0 15px 32px;
+  padding: 0 0 32px;
   background: $bg-main;
-  color: $base-white;
 }
 
-.hero__logo-img {
+.hero__header-logo {
   object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    width: 110px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 130px;
+  }
 }
 
-.hero__phone {
-font-family: $roboto-bold;
-font-size: 22px;
-font-weight: 700;
-line-height: 22px;
-letter-spacing: 0%;
-text-align: left;
+.hero__header-phone {
+  font-family: $roboto-bold;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+  color: $base-white;
 }
 
 .hero__header-wrapper {
@@ -45,11 +53,11 @@ text-align: left;
   @media (max-width: $mobile-width-only) {
     width: 320px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 48px 15px;
     display: grid;
     column-gap: 20px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 125px 145px;
+    grid-template-rows: 47px 1fr;
     justify-items: end;
   }
 
@@ -80,6 +88,7 @@ text-align: left;
   grid-row: -1 / 2;
   align-self: self-end;
   margin: 0;
+  color: $base-white;
 }
 
 .hero__subtitle-sity {
@@ -91,26 +100,43 @@ text-align: left;
   text-align: left;
   grid-column: 2 / 3;
   margin: 0;
+  color: $base-white;
+}
+
+.hero__list {
+  @include list-reset;
+  margin-right: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.hero__item {
+  font-family: $roboto-light;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: -0.3px;
+  color: $base-white;
 }
 
 .hero__description {
-  font-family: $roboto-regular;
+  font-family: $roboto-light;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 20px;
-  letter-spacing: 0%;
+  letter-spacing: -0.5vh;
   text-align: right;
   min-width: 145px;
-  margin: 0;
+  margin: 60px 13px 0;
+  color: $base-white;
 }
 
 .hero__button-link {
   margin: 0 auto;
-  color: white;
-  display: flex;
+  color: $base-white;
   min-height: 60px;
   width: 290px;
-  justify-content: center;
-  align-items: center;
   border: 2px solid #ffffff;
 }
