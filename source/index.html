@@ -14,8 +14,6 @@
   <link rel="preload" as="font" href="./fonts/Roboto-CondensedBold.woff2" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" as="font" href="./fonts/Roboto-Light.woff2" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" as="font" href="./fonts/Roboto-CondensedRegular.woff2" type="font/woff2" crossorigin="anonymous">
-  <!-- <link rel="preload" href="fonts/Roboto-Condensed.woff2" as="font">
-  <link rel="preload" href="fonts/AlumniSans.woff2" as="font"> -->
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-120.png">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/svg+xml" href="images/favicons/icon.svg">
@@ -24,19 +22,12 @@
 </head>
 
 <body class="page-body">
-  <!-- пример использования спрайта -->
-  <!-- <img src="/__spritemap#sprite-logo-view" width="100" height="20" alt="Это спрайт">
-  <svg>
-    <use href="/__spritemap#sprite-user"></use>
-  </svg> -->
-  <!-- примеры требуемых атрибутов data-test="*" -->
+
   <section class="hero" data-test="hero">
     <header class="hero__header container">
       <div class="hero__header-wrapper">
-        <div class="hero__header-logo">
-          <img class="hero__header-logo" src="/__spritemap#sprite-logo-view" width="100" height="20"
-            aria-label="Логотип компании." loading="lazy">
-        </div>
+        <img class="hero__header-logo" src="/__spritemap#sprite-logo-view" width="100" height="20"
+          aria-label="Логотип компании." loading="lazy">
         <a href="tel:88005555555" class="hero__header-phone">8 800 555-55-55</a>
       </div>
     </header>
@@ -48,10 +39,21 @@
         <li class="hero__item">Групповые занятия</li>
         <li class="hero__item">Кардио-зона</li>
       </ul>
+      <div class="hero__button">
+        <a class="hero__button-link button" href="#">Купить абонемент</a>
+      </div>
+      <div class="hero__image">
+        <picture>
+          <source media="(min-width: 1366px)"
+            srcset="./img/hero/hero-desktop.webp 1x, ./img/hero/hero-desktop@2x.webp 2x">
+          <source media="(min-width: 768px)" srcset="./img/hero/hero-tablet.webp 1x, ./img/hero/hero-tablet@2x.webp 2x">
+          <img class="hero__picture" src="./img/hero/hero-desktop.jpg" alt="Мужчина в футболке со знаком супермена."
+            width="500" height="524" srcset="./img/main-desktop@2x.jpg 2x">
+        </picture>
+      </div>
     </div>
-    <div class="hero__button">
-      <a class="hero__button-link button" href="#">Купить абонемент</a>
-    </div>
+
+
   </section>
 
   <!--
@@ -68,10 +70,8 @@
   <footer class="footer" data-test="footer">
     <div class="container footer__container">
       <nav class="footer__nav">
-        <div class="hero__footer-logo">
-          <img class="hero__footer-logo" src="/__spritemap#sprite-logo-view" width="100" height="20"
-            aria-label="Логотип компании." loading="lazy">
-        </div>
+        <img class="hero__footer-logo" src="/__spritemap#sprite-logo-view" width="100" height="20"
+          aria-label="Логотип компании." loading="lazy">
         <ul class="footer__list">
           <li class="footer__item">
             <a href="#" class="footer__item-link">Услуги</a>

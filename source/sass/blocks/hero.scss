@@ -3,11 +3,30 @@
   background: $bg-main;
 }
 
+.hero__header-wrapper {
+  @media (max-width: $mobile-width-only) {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 31px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {}
+}
+
 .hero__header-logo {
   object-fit: cover;
 
   @media (min-width: $tablet-width) {
     width: 110px;
+    height: 22px;
   }
 
   @media (min-width: $desktop-width) {
@@ -16,68 +35,48 @@
 }
 
 .hero__header-phone {
-  font-family: $roboto-bold;
+  font-family: $roboto;
   font-size: 22px;
   font-weight: 700;
   line-height: 22px;
-  letter-spacing: 0%;
+  letter-spacing: 0.04px;
   text-align: left;
   color: $base-white;
-}
-
-.hero__header-wrapper {
-  @media (max-width: $mobile-width-only) {
-    width: 320px;
-    margin: 0 auto;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-  }
 
   @media (min-width: $tablet-width) {
-    width: 768px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1336px;
-    padding: 0 40px;
+    font-size: 24px;
+    line-height: 24px;
   }
 }
 
 .hero__content-wrapper {
   @media (max-width: $mobile-width-only) {
-    width: 320px;
-    margin: 0 auto;
-    padding: 48px 15px;
+    padding: 51px 15px 47px;
     display: grid;
     column-gap: 20px;
     grid-template-columns: 125px 145px;
-    grid-template-rows: 47px 1fr;
+    grid-template-rows: 46px 1fr;
     justify-items: end;
   }
 
   @media (min-width: $tablet-width) {
-    width: 768px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    // padding: 51px 15px 47px;
+    display: grid;
+    justify-items: end;
+    column-gap: 20px;
+    grid-template-columns: 128px 185px 324px;
+    grid-template-rows: 46px 1fr auto auto;
+    // justify-items: end;
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
   }
 
-  @media (min-width: $desktop-width) {
-    width: 1336px;
-    padding: 0 40px;
-  }
+  @media (min-width: $desktop-width) {}
 }
 
 .hero__title {
-  font-family: $alumni-extra-bold;
+  font-family: $alumni;
   font-size: 62px;
   font-weight: 800;
   line-height: 62px;
@@ -89,54 +88,96 @@
   align-self: self-end;
   margin: 0;
   color: $base-white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 72px;
+    line-height: 85px;
+    margin: 0 7px 50px 0;
+    letter-spacing: 2px;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
 }
 
 .hero__subtitle-sity {
-  font-family: $alumni-semi-bold;
+  font-family: $alumni;
   font-size: 32px;
   font-weight: 600;
   line-height: 32px;
-  letter-spacing: 0%;
-  text-align: left;
+  letter-spacing: 0.3px;
   grid-column: 2 / 3;
   margin: 0;
   color: $base-white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 42px;
+    margin: 30px 7px 0 0;
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 
 .hero__list {
   @include list-reset;
-  margin-right: 13px;
+  margin: 0 13px 0 0;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: flex-end;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    margin: 0 15px 74px 0;
+  }
 }
 
 .hero__item {
-  font-family: $roboto-light;
+  font-family: $roboto;
   font-size: 13px;
   font-weight: 300;
   line-height: 20px;
   letter-spacing: -0.3px;
   color: $base-white;
+
+  @media (min-width: $tablet-width) {
+    line-height: 22px;
+  }
 }
 
-.hero__description {
-  font-family: $roboto-light;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 20px;
-  letter-spacing: -0.5vh;
-  text-align: right;
-  min-width: 145px;
-  margin: 60px 13px 0;
-  color: $base-white;
+.hero__button {
+  grid-column: 2/3;
+  margin-top: 48px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 10px 36px 0;
+  }
 }
 
 .hero__button-link {
   margin: 0 auto;
   color: $base-white;
-  min-height: 60px;
+  min-height: 58px;
   width: 290px;
   border: 2px solid #ffffff;
+
+  @media (min-width: $tablet-width) {
+    width: 184px;
+  }
+}
+
+.hero__image {
+
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-column: 3 / 4;
+    grid-row: 1 / 4;
+  }
+
+  @media (min-width: $desktop-width) {}
+
 }

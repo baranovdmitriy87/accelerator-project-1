@@ -1,13 +1,37 @@
-.footer__container {
+.footer {
   background: $bg-footer;
+}
+
+.footer__container {
+  padding: 40px 15px;
 }
 
 .hero__footer-logo {
   object-fit: cover;
+  margin-bottom: 27px;
+}
+
+.footer__list {
+  @include list-reset;
+  display: flex;
+  gap: 19px 36px;
+  margin: 0 0 30px;
+  color: #ffffff;
+  flex-wrap: wrap;
+}
+
+.footer__item-link {
+  letter-spacing: -0.3px;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
 }
 
 .footer__socials {
-  @include list-reset
+  @include list-reset;
+  margin: 0;
+  display: flex;
+  gap: 20px;
 }
 
 .footer__socials-icon {
@@ -25,33 +49,3 @@
     background-image: url("/__spritemap#sprite-reddit-view");
   }
 }
-
-// .footer__socials-icon--vk {
-//   width: 25px;
-//   height: 25px;
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   display: block;
-//   background-image: url("/__spritemap#sprite-vk-view");
-//   // background-color: black;
-// }
-
-// .footer__socials-icon--ok {
-//   width: 25px;
-//   height: 25px;
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   display: block;
-//   background-image: url("/__spritemap#sprite-ok-view");
-//   // background-color: black;
-// }
-
-// .footer__socials-icon--reddit {
-//   width: 25px;
-//   height: 25px;
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   display: block;
-//   background-image: url("/__spritemap#sprite-reddit-view");
-//   // background-color: black;
-// }
