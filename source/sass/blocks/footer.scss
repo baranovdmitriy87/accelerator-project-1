@@ -4,20 +4,58 @@
 
 .footer__container {
   padding: 40px 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 44px 88px;
+
+  }
 }
 
-.hero__footer-logo {
+.footer-logo {
   object-fit: cover;
-  margin-bottom: 27px;
+  margin-bottom: 26px;
+
+
+  @media (min-width: $tablet-width) {
+    width: 110px;
+    height: 22px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 130px;
+    height: 26px;
+  }
 }
 
 .footer__list {
   @include list-reset;
   display: flex;
-  gap: 19px 36px;
+  gap: 20px 36px;
   margin: 0 0 30px;
   color: #ffffff;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    width: 390px;
+    margin: 0;
+    display: flex;
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 598px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .footer__item-link {
@@ -25,6 +63,22 @@
   font-size: 13px;
   font-weight: 300;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 22px;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:focus {
+    outline: 1px solid;
+    padding: 10px;
+    border: none;
+  }
+
+  // &:active {}
 }
 
 .footer__socials {
@@ -32,6 +86,14 @@
   margin: 0;
   display: flex;
   gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 10px;
+  }
 }
 
 .footer__socials-icon {
@@ -43,9 +105,23 @@
 
   &--ok {
     background-image: url("/__spritemap#sprite-ok-view");
+    color: tomato;
+    fill: currentColor;
   }
 
   &--reddit {
     background-image: url("/__spritemap#sprite-reddit-view");
   }
+
+  &:hover {
+    color: tomato;
+    fill: currentColor;
+  }
+}
+
+.footer__socials-link svg {
+  color: currentColor;
+  // fill: aqua;
+  fill: currentColor;
+  cursor: pointer;
 }
