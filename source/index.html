@@ -70,47 +70,50 @@
         </p>
         </p>
       </div>
+    </div>
 
-      <div class="about__image-inner">
+    <div class="about__image-inner">
+      <picture>
+        <source media="(min-width: 1366px)"
+          srcset="./img/about/about-desktop.webp 1x, ./img/about/about-desktop@2x.webp 2x" width="660" height="401">
+        <source media="(min-width: 768px)"
+          srcset="./img/about/about-tablet.webp 1x, ./img/about/about-tablet@2x.webp 2x" width="678" height="345">
+        <source type="image/webp" srcset="./img/about/about-mobile.webp 1x, ./img/about/about-mobile@2x.webp 2x">
+        <img class="about__image" src="./img/about/about-mobile.jpg"
+          alt="Тренажёрный зал с белыми стенами и большим количеством тренажёров." width="320" height="280"
+          srcset="./img/about/about-mobile@2x.jpg 2x">
+      </picture>
+      <div class="about__image-wrapper">
         <picture>
-          <source media="(min-width: 1366px)"
+          <source type="image/webp" media="(min-width: 1366px)"
             srcset="./img/about/about-desktop.webp 1x, ./img/about/about-desktop@2x.webp 2x">
-          <source media="(min-width: 768px)"
+          <source type="image/webp" media="(min-width: 768px)"
             srcset="./img/about/about-tablet.webp 1x, ./img/about/about-tablet@2x.webp 2x">
           <source type="image/webp" srcset="./img/about/about-mobile.webp 1x, ./img/about/about-mobile@2x.webp 2x">
           <img class="about__image" src="./img/about/about-mobile.jpg"
-            alt="Тренажёрный зал с белыми стенами и большим количеством тренажёров." width="678" height="345"
+            alt="Тренажёрный зал с белыми стенами и большим количеством тренажёров." width="660" height="401"
             srcset="./img/about/about-mobile@2x.jpg 2x">
         </picture>
-        <div class="about__image-wrapper">
-          <picture>
-            <source type="image/webp" media="(min-width: 1366px)"
-              srcset="./img/about/about-desktop.webp 1x, ./img/about/about-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="./img/about/about-tablet.webp 1x, ./img/about/about-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="./img/about/about-mobile.webp 1x, ./img/about/about-mobile@2x.webp 2x">
-            <img class="about__image" src="./img/about/about-mobile.jpg"
-              alt="Тренажёрный зал с белыми стенами и большим количеством тренажёров." width="660" height="401"
-              srcset="./img/about/about-mobile@2x.jpg 2x">
-          </picture>
-        </div>
+      </div>
 
-        <div class="about__video" id="player">
-          <picture>
-            <source type="image/webp" media="(min-width: 1366px)"
-              srcset="./img/about/video-desktop.webp 1x, ./img/about/video-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="./img/about/video-tablet.webp 1x, ./img/about/video-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="./img/about/video-mobile.webp 1x, ./img/about/video-mobile@2x.webp 2x">
-            <img class="about__video-image" src="./img/about/video-tablet.jpg"
-              alt="Тренажёрный зал с белыми стенами и большим количеством разнообразных тренажёров." width="364"
-              height="228" srcset="./img/about/video-tablet@2x.jpg 2x">
-          </picture>
-          <a href="https://www.youtube.com/watch?v=9TZXsZItgdw" class="about__link" target="_blank">
-            <img src="./img/svg/play-video.svg" alt="Включить воспроизведение видео." class="about__video-play"
-              width="72" height="72">
-          </a>
-        </div>
+      <div class="about__video" id="player">
+        <picture>
+          <source media="(min-width: 1366px)"
+            srcset="./img/about/about-video-desktop.webp 1x, ./img/about/about-video-desktop@2x.webp 2x" width="360"
+            height="230">
+          <source media="(min-width: 768px)"
+            srcset="./img/about/about-video-tablet.webp 1x, ./img/about/about-video-tablet@2x.webp 2x" width="270"
+            height="170">
+          <source type="image/webp"
+            srcset="./img/about/about-video-mobile.webp 1x, ./img/about/about-video-mobile@2x.webp 2x">
+          <img class="about__video-image" src="./img/about/about-video-mobile.jpg"
+            alt="Тренажёрный зал с белыми стенами и большим количеством разнообразных тренажёров." width="320"
+            height="170" srcset="./img/about/about-video-mobile@2x.jpg 2x">
+        </picture>
+        <a href="https://www.youtube.com/watch?v=9TZXsZItgdw" class="about__link" target="_blank">
+          <img src="./img/svg/play-video.svg" alt="Включить воспроизведение видео." class="about__video-play" width="72"
+            height="72">
+        </a>
       </div>
     </div>
 
