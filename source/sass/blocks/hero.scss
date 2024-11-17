@@ -1,6 +1,6 @@
 .hero {
-  padding: 0 0 32px;
   background: $bg-main;
+  padding: 0 0 32px;
 
   @media (min-width: $tablet-width) {
     padding: 0 0 95px;
@@ -22,16 +22,15 @@
 
 }
 
-.hero__header-wrapper {
+.hero__header-container {
   @media (max-width: $mobile-width-only) {
-    padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 15px 0;
   }
 
   @media (min-width: $tablet-width) {
-    // padding: 31px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -91,34 +90,35 @@
 
 .hero__content-wrapper {
   @media (max-width: $mobile-width-only) {
-    padding: 51px 15px 0;
     display: grid;
-    column-gap: 20px;
     grid-template-columns: 125px 145px;
     grid-template-rows: 46px 1fr;
+    column-gap: 20px;
     justify-items: end;
+    padding: 50px 15px 0;
   }
 
   @media (min-width: $tablet-width) {
     display: grid;
     justify-items: end;
     column-gap: 20px;
-    grid-template-columns: 128px 185px 325px;
+    grid-template-columns: 128px 185px auto;
     // grid-template-rows: auto 1fr auto auto;
 
   }
 
   @media (min-width: $desktop-width) {
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 28px;
     column-gap: 4px;
-    grid-template-columns: 67px 178px 302px 500px;
-    grid-template-rows: 46px 1fr auto auto;
+    grid-template-columns: 24px 178px 302px max-content;
+    // grid-template-rows: 46px 1fr auto auto;
     align-items: center;
   }
 }
 
 .hero__title {
+  color: $base-white;
   font-family: $alumni;
   font-size: 62px;
   font-weight: 800;
@@ -126,17 +126,17 @@
   letter-spacing: 1px;
   text-align: right;
   text-transform: uppercase;
+
   grid-column: 2 / 3;
   grid-row: -1 / 2;
   align-self: self-end;
-  margin: 0;
-  color: $base-white;
 
   @media (min-width: $tablet-width) {
     font-size: 72px;
     line-height: 85px;
-    margin: 0 7px 50px 0;
     letter-spacing: 2px;
+
+    margin: 0 7px 50px 0;
     // grid-column: 2 / 3;
     grid-row: 2 / 3;
   }
@@ -145,20 +145,22 @@
     font-size: 92px;
     line-height: 110px;
     letter-spacing: 4px;
+
     grid-column: 3 / 4;
-    margin: 0 53px 39px 0;
+    margin: 0 52px 27px 0;
   }
 }
 
 .hero__subtitle-sity {
+  color: $base-white;
   font-family: $alumni;
   font-size: 32px;
   font-weight: 600;
   line-height: 32px;
   letter-spacing: 0.3px;
+
   grid-column: 2 / 3;
-  margin: 0;
-  color: $base-white;
+  margin: 0 1px 0 0;
 
   @media (min-width: $tablet-width) {
     font-size: 42px;
@@ -172,36 +174,35 @@
     font-size: 54px;
     line-height: 54px;
     grid-column: 3 / 4;
-    margin: 109px 52px 0;
+    margin: 40px 52px 0 0;
   }
 }
 
 .hero__list {
   @include list-reset;
-  margin: 0 13px 0 0;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: flex-end;
+  margin: 0 13px 0 0;
 
   @media (min-width: $tablet-width) {
-    // grid-row: 2 / 3;
     margin: 0 16px 75px 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 71px 17px 0 0;
     grid-column: 2/3;
+    margin: 13px 17px 0 0;
   }
 }
 
 .hero__item {
+  color: $base-white;
   font-family: $roboto;
   font-size: 13px;
   font-weight: 300;
   line-height: 20px;
   letter-spacing: -0.3px;
-  color: $base-white;
 
   @media (min-width: $tablet-width) {
     line-height: 22px;
@@ -213,30 +214,31 @@
   margin-top: 48px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 10px 31px 0;
+    margin: 0 10px 30px 0;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 3 / 4;
+    margin: 0 52px 42px 0;
   }
-
 }
 
 .hero__button-link {
-  margin: 0 auto;
   color: $base-white;
-  min-height: 56px;
+  margin: 0 auto;
+  min-height: 60px;
   width: 290px;
-  border: 2px solid #ffffff;
+  border: 2px solid $base-white;
 
   @media (min-width: $tablet-width) {
+    min-height: 57px;
     width: 184px;
   }
 
   @media (min-width: $desktop-width) {
     width: 270px;
-    min-height: 67px;
-    margin: 0px 42px 21px 0;
+    min-height: 66px;
+    // margin: 0px 42px 21px 0;
   }
 
   &:hover {
@@ -245,7 +247,7 @@
   }
 
   &:focus-visible {
-    background-color: hsla(0, 0%, 100%, 0.8);
+    background-color: #ffffffcc;
     color: $text-additional;
     border: none;
     outline: 2px solid #000000;

@@ -6,9 +6,9 @@
   padding: 40px 15px;
 
   @media (min-width: $tablet-width) {
-    padding: 45px;
     display: flex;
     justify-content: space-between;
+    padding: 45px;
   }
 
   @media (min-width: $desktop-width) {
@@ -39,8 +39,8 @@
   display: flex;
   gap: 20px 36px;
   margin: 0 0 30px;
-  color: #ffffff;
   flex-wrap: wrap;
+  color: $base-white;
 
   @media (min-width: $tablet-width) {
     width: 390px;

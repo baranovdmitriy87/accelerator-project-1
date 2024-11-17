@@ -23,9 +23,10 @@
 
 <body class="page-body">
 
+  <!-- hero -->
   <section class="hero" data-test="hero">
     <header class="hero__header container">
-      <div class="hero__header-wrapper">
+      <div class="hero__header-container">
         <img class="hero__header-logo" src="/__spritemap#sprite-logo-view" width="100" height="20"
           aria-label="Логотип компании." loading="lazy">
         <a href="tel:88005555555" class="hero__header-phone">8 800 555-55-55</a>
@@ -33,7 +34,7 @@
     </header>
     <div class="hero__content-wrapper container">
       <h1 class="hero__title">Фитнес центр</h1>
-      <p class="hero__subtitle-sity">Омск</p>
+      <span class="hero__subtitle-sity">Омск</span>
       <ul class="hero__list">
         <li class="hero__item">Тренажёрный зал</li>
         <li class="hero__item">Групповые занятия</li>
@@ -48,16 +49,74 @@
             srcset="./img/hero/hero-desktop.webp 1x, ./img/hero/hero-desktop@2x.webp 2x">
           <source media="(min-width: 768px)" srcset="./img/hero/hero-tablet.webp 1x, ./img/hero/hero-tablet@2x.webp 2x">
           <img class="hero__picture" src="./img/hero/hero-desktop.jpg" alt="Мужчина в футболке со знаком супермена."
-            width="500" height="524" srcset="./img/main-desktop@2x.jpg 2x">
+            width="500" height="524" srcset="./img/hero-desktop@2x.jpg 2x">
         </picture>
       </div>
     </div>
+  </section>
 
+  <!-- About -->
+  <section class="about" data-test="about">
+
+    <div class="about__container container">
+      <div class="about__content-wrapper">
+        <h2 class="about__title">Тренажёрный зал</h2>
+        <h3 class="about__subtitle">Просторный зал площадью 900 кв/м</h3>
+        <p class="about__description">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления
+          тела и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.
+        <p class="about__description-desktop">
+          В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре
+          есть несколько оборудованных залов для различных видов групповых занятий.
+        </p>
+        </p>
+      </div>
+
+      <div class="about__image-inner">
+        <picture>
+          <source media="(min-width: 1366px)"
+            srcset="./img/about/about-desktop.webp 1x, ./img/about/about-desktop@2x.webp 2x">
+          <source media="(min-width: 768px)"
+            srcset="./img/about/about-tablet.webp 1x, ./img/about/about-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="./img/about/about-mobile.webp 1x, ./img/about/about-mobile@2x.webp 2x">
+          <img class="about__image" src="./img/about/about-mobile.jpg"
+            alt="Тренажёрный зал с белыми стенами и большим количеством тренажёров." width="678" height="345"
+            srcset="./img/about/about-mobile@2x.jpg 2x">
+        </picture>
+        <div class="about__image-wrapper">
+          <picture>
+            <source type="image/webp" media="(min-width: 1366px)"
+              srcset="./img/about/about-desktop.webp 1x, ./img/about/about-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="./img/about/about-tablet.webp 1x, ./img/about/about-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="./img/about/about-mobile.webp 1x, ./img/about/about-mobile@2x.webp 2x">
+            <img class="about__image" src="./img/about/about-mobile.jpg"
+              alt="Тренажёрный зал с белыми стенами и большим количеством тренажёров." width="660" height="401"
+              srcset="./img/about/about-mobile@2x.jpg 2x">
+          </picture>
+        </div>
+
+        <div class="about__video" id="player">
+          <picture>
+            <source type="image/webp" media="(min-width: 1366px)"
+              srcset="./img/about/video-desktop.webp 1x, ./img/about/video-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="./img/about/video-tablet.webp 1x, ./img/about/video-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="./img/about/video-mobile.webp 1x, ./img/about/video-mobile@2x.webp 2x">
+            <img class="about__video-image" src="./img/about/video-tablet.jpg"
+              alt="Тренажёрный зал с белыми стенами и большим количеством разнообразных тренажёров." width="364"
+              height="228" srcset="./img/about/video-tablet@2x.jpg 2x">
+          </picture>
+          <a href="https://www.youtube.com/watch?v=9TZXsZItgdw" class="about__link" target="_blank">
+            <img src="./img/svg/play-video.svg" alt="Включить воспроизведение видео." class="about__video-play"
+              width="72" height="72">
+          </a>
+        </div>
+      </div>
+    </div>
 
   </section>
 
   <!--
-  <div data-test="about">about</div>
   <div data-test="price">price</div>
   <div data-test="games">games</div>
   <div data-test="juri">juri</div>
@@ -67,6 +126,7 @@
   <div data-test="reviews">reviews</div>
   <div data-test="form">form</div> -->
 
+  <!-- footer -->
   <footer class="footer" data-test="footer">
     <div class="container footer__container">
       <img class="footer-logo" src="/__spritemap#sprite-logo-view" width="100" height="20"
@@ -114,8 +174,6 @@
             <svg class="footer__socials-icon footer__socials-icon--reddit" width="25" height="25" role="img"
               aria-label="Reddit.">
               <use href="/__spritemap#sprite-reddit-view"></use>
-
-              <!-- <use xlink:href="./img/sprite.svg#reddit"></use> -->
             </svg>
           </a>
         </li>

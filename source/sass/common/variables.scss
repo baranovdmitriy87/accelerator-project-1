@@ -17,7 +17,11 @@ $bg-main: linear-gradient(90.00deg, #1c3477, #1c3477 0.01%, #1a3578 39.106%, #73
 $bg-footer: #030A1A;
 $bg-secondary-block: #1C3374;
 $bg-button-border: linear-gradient(135.58deg, #d10a42 1.116%, #00359f 100%);
+$bg-video: rgba(20, 54, 122, 0.5);
 
+// Animation
+$tf-default: ease;
+$trans-default: 0.3s $tf-default;
 
 //  Alt colors
 $light-grey: #e2e2e2;
