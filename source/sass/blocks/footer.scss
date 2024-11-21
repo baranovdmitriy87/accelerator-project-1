@@ -8,7 +8,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    padding: 45px;
+    padding: 46px 45px;
   }
 
   @media (min-width: $desktop-width) {
@@ -52,9 +52,6 @@
 
   @media (min-width: $desktop-width) {
     width: 598px;
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
   }
 }
 

@@ -14,19 +14,24 @@ $text-secondary-gradient: linear-gradient(128.66deg, #d10a42 0%, #0041ca 45.491%
 $bg-secondary: #F8F9FC;
 $bg-banners: #ED0233;
 $bg-main: linear-gradient(90.00deg, #1c3477, #1c3477 0.01%, #1a3578 39.106%, #73184b 75.502%, #b4022a 100%);
+$bg-video-gradient: linear-gradient(90deg, rgb(237, 2, 51) 13.982%, rgb(0, 62, 183) 100.498%) cadetblue;
 $bg-footer: #030A1A;
 $bg-secondary-block: #1C3374;
 $bg-button-border: linear-gradient(135.58deg, #d10a42 1.116%, #00359f 100%);
 $bg-video: rgba(20, 54, 122, 0.5);
+$bg-video-tablet: rgba(20, 54, 122, 0.8);
 
 // Animation
 $tf-default: ease;
 $trans-default: 0.3s $tf-default;
+$border-width: 2px solid;
 
 //  Alt colors
 $light-grey: #e2e2e2;
 $error-color: #FF121F;
 $tabs-color: #D10A42;
+$base-dark-blue-hover: #10265499;
+$grey-focus: #C8C9CC;
 
 // Width-Viewports
 $mobile-width: 320px;
