@@ -7,19 +7,22 @@ $base-white: #ffffff;
 $base-dark-blue: #102654;
 
 // Text colors
+$text-tabs: #10265480;
+$text-tabs-hover: #102654B3;
 $text-additional: #103AAE;
 $text-secondary-gradient: linear-gradient(128.66deg, #d10a42 0%, #0041ca 45.491%);
 
 // Background colors
-$bg-secondary: #F8F9FC;
+$bg-secondary-gray: #f8f9fc;
 $bg-banners: #ED0233;
+$bg-tab-btn: linear-gradient(151.36deg, rgb(237, 2, 51) 16.344%,rgb(0, 62, 183) 97.809%);
 $bg-main: linear-gradient(90.00deg, #1c3477, #1c3477 0.01%, #1a3578 39.106%, #73184b 75.502%, #b4022a 100%);
 $bg-video-gradient: linear-gradient(90deg, rgb(237, 2, 51) 13.982%, rgb(0, 62, 183) 100.498%) cadetblue;
 $bg-footer: #030A1A;
 $bg-secondary-block: #1C3374;
 $bg-button-border: linear-gradient(135.58deg, #d10a42 1.116%, #00359f 100%);
-$bg-video: rgba(20, 54, 122, 0.5);
-$bg-video-tablet: rgba(20, 54, 122, 0.8);
+$bg-video: #14367a80;
+$bg-video-tablet: #14367acc;
 
 // Animation
 $tf-default: ease;
@@ -27,6 +30,7 @@ $trans-default: 0.3s $tf-default;
 $border-width: 2px solid;
 
 //  Alt colors
+$color-whisper: #e8e8e8;
 $light-grey: #e2e2e2;
 $error-color: #FF121F;
 $tabs-color: #D10A42;

@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" card="width=device-width, initial-scale=1.0">
   <title>Supergym - фитнес-центр в Омске</title>
   <link rel="stylesheet" href="sass/style.scss">
   <link rel="preload" href="css/style.min.css" as="style">
@@ -31,8 +31,8 @@
     <header class="hero__header container">
       <div class="hero__header-container">
         <img class="hero__header-logo" src="/__spritemap#sprite-logo-view" width="100" height="20"
-          aria-label="Логотип компании." loading="lazy">
-        <a href="tel:88005555555" class="hero__header-phone">8 800 555-55-55</a>
+          aria-label="Логотип компании." alt="Логотип компании." loading="lazy">
+        <a class="hero__header-phone" href="tel:88005555555">8 800 555-55-55</a>
       </div>
     </header>
     <div class="hero__content-wrapper container">
@@ -44,15 +44,16 @@
         <li class="hero__item">Кардио-зона</li>
       </ul>
       <div class="hero__button">
-        <a class="hero__button-link button disabled" href="#">Купить абонемент</a>
+        <a class="hero__button-link button" href="#">Купить абонемент</a>
       </div>
       <div class="hero__image">
         <picture>
-          <source media="(min-width: 1366px)"
-            srcset="./img/hero/hero-desktop.webp 1x, ./img/hero/hero-desktop@2x.webp 2x">
-          <source media="(min-width: 768px)" srcset="./img/hero/hero-tablet.webp 1x, ./img/hero/hero-tablet@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 1366px)"
+            srcset="./img/hero/hero-desktop.webp 1x, ./img/hero/hero-desktop@2x.webp 2x" width="500" height="524">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="./img/hero/hero-tablet.webp 1x, ./img/hero/hero-tablet@2x.webp 2x" width="324" height="390">
           <img class="hero__picture" src="./img/hero/hero-desktop.jpg" alt="Мужчина в футболке со знаком супермена."
-            width="500" height="524" srcset="./img/hero-desktop@2x.jpg 2x">
+            width="500" height="524" srcset="./img/hero/hero-desktop@2x.jpg 2x">
         </picture>
       </div>
     </div>
@@ -62,11 +63,12 @@
   <section class="about" data-test="about">
 
     <div class="about__container container">
-      <div class="about__content-wrapper">
+      <div class="about__card-wrapper">
         <h2 class="about__title">Тренажёрный зал</h2>
         <h3 class="about__subtitle">Просторный зал площадью 900 кв/м</h3>
         <p class="about__description">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления
           тела и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.
+        </p>
         <p class="about__description-desktop">
           В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре
           есть несколько оборудованных залов для различных видов групповых занятий.
@@ -86,18 +88,7 @@
           alt="Тренажёрный зал с белыми стенами и большим количеством тренажёров." width="320" height="280"
           srcset="./img/about/about-mobile@2x.jpg 2x">
       </picture>
-      <!-- <div class="about__image-wrapper">
-        <picture>
-          <source type="image/webp" media="(min-width: 1366px)"
-            srcset="./img/about/about-desktop.webp 1x, ./img/about/about-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)"
-            srcset="./img/about/about-tablet.webp 1x, ./img/about/about-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="./img/about/about-mobile.webp 1x, ./img/about/about-mobile@2x.webp 2x">
-          <img class="about__image" src="./img/about/about-mobile.jpg"
-            alt="Тренажёрный зал с белыми стенами и большим количеством тренажёров." width="660" height="401"
-            srcset="./img/about/about-mobile@2x.jpg 2x">
-        </picture>
-      </div> -->
+
       <div class="about__video" id="player">
         <picture>
           <source media="(min-width: 1366px)"
@@ -121,59 +112,65 @@
     </div>
   </section>
 
+  <!-- price -->
   <section class="price" data-test="price">
     <div class="prise__container container">
       <div class="price__container-inner">
         <picture>
-
+          <source type="image/webp" media="(min-width: 1366px)"
+            srcset="./img/price/price-gym-desktop.webp 1x, ./img/price/price-gym-desktop@2x.webp 2x" width="321" height="384">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="./img/price/price-gym-tablet.webp 1x, ./img/price/price-gym-tablet@2x.webp 2x" width="275" height="328">
+          <img class="price__picture" src="./img/price/price-gym-desktop.png" alt="Спортивные блины красного цвета."
+            width="321" height="384" srcset="./img/price/price-gym-desktop.png 2x">
         </picture>
       </div>
       <h3 class="price__title">Абонементы</h3>
-      <ul class="price__tabs price__tabs--nojs">
+      <ul class="price__tabs-list price__tabs--nojs">
         <li class="price__tab price__tab--month">
           <button class="price__tab-link price__tab-link--month is-active" type="button">1 месяц</button>
         </li>
         <li class="price__tab price__tab--half-year">
-          <button class="price__tab-link price__tab-link--half-year is-active" type="button">6 месяцев</button>
+          <button class="price__tab-link price__tab-link--half-year" type="button">6 месяцев</button>
         </li>
         <li class="price__tab price__tab--year">
-          <button class="price__tab-link price__tab-link--year is-active" type="button">12 месяцев</button>
+          <button class="price__tab-link price__tab-link--year" type="button">12 месяцев</button>
         </li>
       </ul>
 
-      <ul class="price__contents">
-        <div class="price__content price__content--month price__content--nojs">
-          <ul class="price__content-list">
-            <li class="price__content-item" tabindex="0">
-              <h3>С тренером</h3>
+      <div class="price__cards">
+        <div class="price__card price__card--month price__card--nojs">
+          <ul class="price__card-list">
+            <li class="price__card-item price__card-item--js" tabindex="0">
+              <h3 class="price__card-title">С тренером</h3>
               <span>12 занятий</span>
-              <div class="price__content-price">
+              <div class="price__card-price">
                 <span data-price="5000">5000</span>
                 <span>₽</span>
               </div>
-              <a href="#" class="price__content-link btn btn--blue">Купить абонемент</a>
+              <a href="#" class="price__card-link button button--blue">Купить абонемент</a>
             </li>
-            <li class="price__content-item" tabindex="0">
-              <h3>Дневной</h3>
+            <li class="price__card-item" tabindex="0">
+              <h3 class="price__card-title">Дневной</h3>
               <span>с 8:00 до 17:00</span>
-              <div class="price__content-price">
+              <div class="price__card-price">
                 <span data-price="1700">1700</span>
                 <span>₽</span>
               </div>
-              <a href="#" class="price__content-link btn btn--blue">Купить абонемент</a>
+              <a href="#" class="price__card-link button">Купить абонемент</a>
             </li>
-            <li class="price__content-item" tabindex="0">
-              <h3>Полный день</h3>
+            <li class="price__card-item" tabindex="0">
+              <h3 class="price__card-title">Полный день</h3>
               <span>с 8:00 до 22:00</span>
-              <div class="price__content-price">
+              <div class="price__card-price">
                 <span data-price="2700">2700</span>
                 <span>₽</span>
               </div>
-              <a href="#" class="price__content-link btn btn--blue">Купить абонемент</a>
+              <a href="#" class="price__card-link button">Купить абонемент</a>
             </li>
           </ul>
         </div>
-      </ul>
+      </div>
 
     </div>
 
