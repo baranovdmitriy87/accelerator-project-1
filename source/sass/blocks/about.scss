@@ -27,7 +27,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 60px 0 0;
+    padding: 62px 0 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -57,7 +57,7 @@
     font-size: 54px;
     line-height: 54px;
     text-align: left;
-    margin: 2px 0 26px;
+    margin: 3px 0 25px;
   }
 }
 
@@ -305,14 +305,20 @@
     opacity: 1;
 
     @media (min-width: $desktop-width) {
-      right: 20px;
-      bottom: 20px;
+      right: 21px;
+      bottom: 21px;
     }
   }
 }
 
 .about__image {
   margin-bottom: 32px;
+
+  @media (min-width: $desktop-width) {
+    right: 21px;
+    bottom: 21px;
+    margin-bottom: 33px;
+  }
 }
 
 .about__image-wrapper {

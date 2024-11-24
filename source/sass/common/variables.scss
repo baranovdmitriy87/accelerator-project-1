@@ -15,7 +15,9 @@ $text-secondary-gradient: linear-gradient(128.66deg, #d10a42 0%, #0041ca 45.491%
 // Background colors
 $bg-secondary-gray: #f8f9fc;
 $bg-banners: #ED0233;
-$bg-tab-btn: linear-gradient(151.36deg, rgb(237, 2, 51) 16.344%,rgb(0, 62, 183) 97.809%);
+$bg-tab-btn-hover: linear-gradient(151.36deg, rgba(237, 2, 51, 0.8) 16.953%,rgba(0, 62, 183, 0.8) 96.592%);
+$bg-tab-btn: linear-gradient(151.36deg, rgb(237, 2, 51) 16.344%, rgb(0, 62, 183) 97.809%);
+$bg-tab-card-border: linear-gradient(147.36deg, rgb(237, 2, 51) -10.344%, rgb(0, 62, 183) 101.809%)25;
 $bg-main: linear-gradient(90.00deg, #1c3477, #1c3477 0.01%, #1a3578 39.106%, #73184b 75.502%, #b4022a 100%);
 $bg-video-gradient: linear-gradient(90deg, rgb(237, 2, 51) 13.982%, rgb(0, 62, 183) 100.498%) cadetblue;
 $bg-footer: #030A1A;
@@ -31,6 +33,7 @@ $border-width: 2px solid;
 
 //  Alt colors
 $color-whisper: #e8e8e8;
+$color-grey: #787878;
 $light-grey: #e2e2e2;
 $error-color: #FF121F;
 $tabs-color: #D10A42;
