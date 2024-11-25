@@ -155,10 +155,10 @@
   &:not(.is-hidden) {
     display: block;
   }
+}
 
-  &--nojs {
-    display: block;
-  }
+.price__cards.is-hidden {
+  display: none;
 }
 
 .price__cards-list {
@@ -178,12 +178,6 @@
     flex-direction: row;
   }
 }
-
-// .price__card-price--half-year span::before {
-//   top: -31px;
-//   left: -37px;
-//   font-size: 100px;
-// }
 
 .price__card-item {
   width: 290px;
@@ -330,9 +324,3 @@
     font-size: 60px;
   }
 }
-
-
-
-// .price__number span {
-//   color: $base-dark-blue;
-// }
