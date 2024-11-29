@@ -19,7 +19,6 @@
   @media (min-width: $desktop-width) {
     padding: 30px 88px;
   }
-
 }
 
 .hero__header-container {
@@ -35,8 +34,6 @@
     align-items: center;
     justify-content: space-between;
   }
-
-  @media (min-width: $desktop-width) {}
 }
 
 .hero__header-logo {
@@ -74,7 +71,7 @@
   }
 
   &:hover {
-    color: #1C337480;
+    color: rgba(28, 51, 116, 0.5);
   }
 
   &:focus-visible {
@@ -104,8 +101,6 @@
     justify-items: end;
     column-gap: 20px;
     grid-template-columns: 128px 185px auto;
-    // grid-template-rows: auto 1fr auto auto;
-
   }
 
   @media (min-width: $desktop-width) {
@@ -113,7 +108,6 @@
     margin-top: 28px;
     column-gap: 4px;
     grid-template-columns: 24px 178px 302px max-content;
-    // grid-template-rows: 46px 1fr auto auto;
     align-items: center;
   }
 }
@@ -138,7 +132,6 @@
     letter-spacing: 2px;
 
     margin: 0 7px 50px 0;
-    // grid-column: 2 / 3;
     grid-row: 2 / 3;
   }
 
@@ -181,6 +174,7 @@
 
 .hero__list {
   @include list-reset;
+
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -248,7 +242,7 @@
   }
 
   &:focus-visible {
-    background-color: #ffffffcc;
+    background-color: rgba(255, 255, 255, 0.8);
     color: $text-additional;
     border: none;
     outline: 2px solid #000000;
@@ -261,7 +255,6 @@
 }
 
 .hero__image {
-
   @media (max-width: $mobile-width-only) {
     display: none;
   }
@@ -272,8 +265,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    // margin-left: 2px;
     grid-column: 4 / 5;
   }
-
 }

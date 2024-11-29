@@ -2,16 +2,16 @@
 @import "vendor/normalize";
 
 //  GLOBAL
-@import "./common/variables.scss";
-@import "./common/global.scss";
-@import "./common/fonts.scss";
-@import "./common/mixins.scss";
+@import "./common/variables";
+@import "./common/global";
+@import "./common/fonts";
+@import "./common/mixins";
 
 //  BLOCKS
-@import "./blocks/button.scss";
-@import "./blocks/container.scss";
-@import "./blocks/hero.scss";
-@import "./blocks/footer.scss";
-@import "./blocks/about.scss";
-@import "./blocks/price.scss";
+@import "./blocks/button";
+@import "./blocks/container";
+@import "./blocks/hero";
+@import "./blocks/footer";
+@import "./blocks/about";
+@import "./blocks/price";
 

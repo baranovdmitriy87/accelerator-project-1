@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" card="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Supergym - фитнес-центр в Омске</title>
   <link rel="stylesheet" href="sass/style.scss">
   <link rel="preload" href="css/style.min.css" as="style">
@@ -20,9 +20,6 @@
   <link rel="apple-touch-icon" href="images/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
 </head>
-
-<!-- src="/__spritemap#sprite-logo-view" -->
-<!--  <use href="/__spritemap#sprite-reddit-view"></use> -->
 
 <body class="page-body">
 
@@ -73,38 +70,39 @@
           В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре
           есть несколько оборудованных залов для различных видов групповых занятий.
         </p>
-        </p>
       </div>
     </div>
 
     <div class="about__image-inner">
       <picture>
-        <source media="(min-width: 1366px)"
+        <source type="image/webp" media="(min-width: 1366px)"
           srcset="./img/about/about-desktop.webp 1x, ./img/about/about-desktop@2x.webp 2x" width="660" height="401">
-        <source media="(min-width: 768px)"
+        <source type="image/webp" media="(min-width: 768px)"
           srcset="./img/about/about-tablet.webp 1x, ./img/about/about-tablet@2x.webp 2x" width="678" height="345">
-        <source type="image/webp" srcset="./img/about/about-mobile.webp 1x, ./img/about/about-mobile@2x.webp 2x">
+        <source type="image/webp" srcset="./img/about/about-mobile.webp 1x, ./img/about/about-mobile@2x.webp 2x"
+          width="320" height="280">
         <img class="about__image" src="./img/about/about-mobile.jpg"
-          alt="Тренажёрный зал с большим количеством тренажёров." width="320" height="280"
-          srcset="./img/about/about-mobile@2x.jpg 2x">
+          alt="Тренажёрный зал с большим количеством тренажёров." srcset="./img/about/about-mobile@2x.jpg 2x"
+          width="320" height="280">
       </picture>
 
       <div class="about__video" id="player">
         <picture>
-          <source media="(min-width: 1366px)"
+          <source type="image/webp" media="(min-width: 1366px)"
             srcset="./img/about/about-video-desktop.webp 1x, ./img/about/about-video-desktop@2x.webp 2x" width="360"
             height="230">
-          <source media="(min-width: 768px)"
+          <source type="image/webp" media="(min-width: 768px)"
             srcset="./img/about/about-video-tablet.webp 1x, ./img/about/about-video-tablet@2x.webp 2x" width="270"
             height="170">
           <source type="image/webp"
-            srcset="./img/about/about-video-mobile.webp 1x, ./img/about/about-video-mobile@2x.webp 2x">
-          <img class="about__video-image" src="./img/about/about-video-mobile.jpg"
-            alt="Тренажёрный зал с большим количеством разнообразных тренажёров." width="320" height="170"
+            srcset="./img/about/about-video-mobile.webp 1x, ./img/about/about-video-mobile@2x.webp 2x" width="320"
+            height="170">
+          <img class="about__video-image" src="./img/about/about-video-mobile.jpg" width="320" height="170"
+            alt="Тренажёрный зал с большим количеством разнообразных тренажёров."
             srcset="./img/about/about-video-mobile@2x.jpg 2x">
         </picture>
-        <a href="https://www.youtube.com/watch?v=9TZXsZItgdw" class="about__link" target="_blank">
-          <svg class="about__video-play-icon about__video-play-icon--treg" width="72" height="72" role="img">
+        <a class="about__link" href="https://www.youtube.com/watch?v=9TZXsZItgdw">
+          <svg class="about__video-play-icon" width="72" height="72" role="img">
           </svg>
         </a>
       </div>
@@ -113,7 +111,7 @@
 
   <!-- price -->
   <section class="price" data-test="price">
-    <div class="prise__container container">
+    <div class="price__container container">
       <div class="price__container-inner">
         <picture>
           <source type="image/webp" media="(min-width: 1366px)"
@@ -131,13 +129,13 @@
 
       <ul class="price__tabs-list">
         <li class="price__tab price__tab--month">
-          <button class="price__tab-link price__tab-link--month is-active" type="button">1 месяц</button>
+          <button class="price__tab-link is-active" type="button">1 месяц</button>
         </li>
         <li class="price__tab price__tab--half-year">
-          <button class="price__tab-link price__tab-link--half-year" type="button">6 месяцев</button>
+          <button class="price__tab-link" type="button">6 месяцев</button>
         </li>
         <li class="price__tab price__tab--year">
-          <button class="price__tab-link price__tab-link--year" type="button">12 месяцев</button>
+          <button class="price__tab-link" type="button">12 месяцев</button>
         </li>
       </ul>
 
@@ -145,64 +143,64 @@
 
         <div class="price__cards price__cards--month">
           <ul class="price__cards-list">
-            <li class="price__card-item" tabindex="0">
+            <li class="price__card-item">
               <h3 class="price__card-title">С тренером</h3>
               <span>12 занятий</span>
               <div class="price__card-price">
                 <span data-price="5000">5000</span>
                 <span>₽</span>
               </div>
-              <a href="#" class="price__card-link button button--blue">Купить абонемент</a>
+              <a class="price__card-link button button--blue" href="#">Купить абонемент</a>
             </li>
-            <li class="price__card-item" tabindex="0">
+            <li class="price__card-item">
               <h3 class="price__card-title">Дневной</h3>
               <span>с 8:00 до 17:00</span>
               <div class="price__card-price">
                 <span data-price="1700">1700</span>
                 <span>₽</span>
               </div>
-              <a href="#" class="price__card-link button">Купить абонемент</a>
+              <a class="price__card-link button" href="#">Купить абонемент</a>
             </li>
-            <li class="price__card-item" tabindex="0">
+            <li class="price__card-item">
               <h3 class="price__card-title">Полный день</h3>
               <span>с 8:00 до 22:00</span>
               <div class="price__card-price">
                 <span data-price="2700">2700</span>
                 <span>₽</span>
               </div>
-              <a href="#" class="price__card-link button">Купить абонемент</a>
+              <a class="price__card-link button" href="#">Купить абонемент</a>
             </li>
           </ul>
         </div>
 
         <div class="price__cards price__cards--half-year is-hidden">
           <ul class="price__cards-list">
-            <li class="price__card-item" tabindex="0">
+            <li class="price__card-item">
               <h3 class="price__card-title">С тренером</h3>
               <span>72 занятия</span>
               <div class="price__card-price price__card-price--half-year">
                 <span data-price="30000">30000</span>
                 <span>₽</span>
               </div>
-              <a href="#" class="price__card-link button button--blue">Купить абонемент</a>
+              <a class="price__card-link button button--blue" href="#">Купить абонемент</a>
             </li>
-            <li class="price__card-item" tabindex="0">
+            <li class="price__card-item">
               <h3 class="price__card-title">Дневной</h3>
               <span>с 8:00 до 17:00</span>
               <div class="price__card-price">
                 <span data-price="10200">10200</span>
                 <span>₽</span>
               </div>
-              <a href="#" class="price__card-link button button--blue">Купить абонемент</a>
+              <a class="price__card-link button button--blue" href="#">Купить абонемент</a>
             </li>
-            <li class="price__card-item" tabindex="0">
+            <li class="price__card-item">
               <h3 class="price__card-title">Полный день</h3>
               <span>с 8:00 до 22:00</span>
               <div class="price__card-price">
                 <span data-price="16200">16200</span>
                 <span>₽</span>
               </div>
-              <a href="#" class="price__card-link button button--blue">Купить абонемент</a>
+              <a class="price__card-link button button--blue" href="#">Купить абонемент</a>
             </li>
           </ul>
         </div>
@@ -216,7 +214,7 @@
                 <span data-price="60000">60000</span>
                 <span>₽</span>
               </div>
-              <a href="#" class="price__card-link button button--blue">Купить абонемент</a>
+              <a class="price__card-link button button--blue" href="#">Купить абонемент</a>
             </li>
             <li class="price__card-item" tabindex="0">
               <h3 class="price__card-title">Дневной</h3>
@@ -225,7 +223,7 @@
                 <span data-price="20400">20400</span>
                 <span>₽</span>
               </div>
-              <a href="#" class="price__card-link button button--blue">Купить абонемент</a>
+              <a class="price__card-link button button--blue" href="#">Купить абонемент</a>
             </li>
             <li class="price__card-item" tabindex="0">
               <h3 class="price__card-title">Полный день</h3>
@@ -234,63 +232,51 @@
                 <span data-price="32400">32400</span>
                 <span>₽</span>
               </div>
-              <a href="#" class="price__card-link button button--blue">Купить абонемент</a>
+              <a class="price__card-link button button--blue" href="#">Купить абонемент</a>
             </li>
           </ul>
         </div>
       </div>
-
     </div>
-
-
   </section>
 
-  <!--
-  <div data-test="games">games</div>
-  <div data-test="juri">juri</div>
-  <div data-test="features">features</div>
-  <div data-test="offers">offers</div>
-  <div data-test="faq">faq</div>
-  <div data-test="reviews">reviews</div>
-  <div data-test="form">form</div> -->
+  <!-- <div data-test="juri">juri</div> -->
 
   <!-- footer -->
   <footer class="footer" data-test="footer">
     <div class="container footer__container">
-      <img class="footer-logo" src="/__spritemap#sprite-logo-view" width="100" height="20"
-        aria-label="Логотип компании." loading="lazy">
+      <img class="footer-logo" src="/__spritemap#sprite-logo-view" width="100" height="20" alt="Логотип компании."
+        loading="lazy">
       <nav class="footer__nav">
         <ul class="footer__list">
           <li class="footer__item">
-            <a href="#" class="footer__item-link">Услуги</a>
+            <a class="footer__item-link" href="#">Услуги</a>
           </li>
           <li class="footer__item">
-            <a href="#" class="footer__item-link">Абонементы</a>
+            <a class="footer__item-link" href="#">Абонементы</a>
           </li>
           <li class="footer__item">
-            <a href="#" class="footer__item-link">Акции</a>
+            <a class="footer__item-link" href="#">Акции</a>
           </li>
           <li class="footer__item">
-            <a href="#" class="footer__item-link">Тренеры</a>
+            <a class="footer__item-link" href="#">Тренеры</a>
           </li>
           <li class="footer__item">
-            <a href="#" class="footer__item-link">Расписание</a>
+            <a class="footer__item-link" href="#">Расписание</a>
           </li>
         </ul>
       </nav>
       <ul class="footer__socials">
         <li class="footer__socials-item">
-          <a href="https://vk.com" class="footer__socials-link" target="_blank">
+          <a class="footer__socials-link" href="https://vk.com">
             <svg class="footer__socials-icon footer__socials-icon--vk" width="25" height="25" role="img"
               aria-label="Вконтакте.">
               <use href="/__spritemap#sprite-vk-view"></use>
-
-              <!-- <use xlink:href="./img/sprite.svg#vk"></use> -->
             </svg>
           </a>
         </li>
         <li class="footer__socials-item">
-          <a href="https://ok.ru" class="footer__socials-link">
+          <a class="footer__socials-link" href="https://ok.ru">
             <svg class="footer__socials-icon footer__socials-icon--ok" width="25" height="25" role="img"
               aria-label="Одноклассники.">
               <use href="/__spritemap#sprite-ok-view"></use>
@@ -298,7 +284,7 @@
           </a>
         </li>
         <li class="footer__socials-item">
-          <a href="https://www.reddit.com" class="footer__socials-link" target="_blank">
+          <a class="footer__socials-link" href="https://www.reddit.com">
             <svg class="footer__socials-icon footer__socials-icon--reddit" width="25" height="25" role="img"
               aria-label="Reddit.">
               <use href="/__spritemap#sprite-reddit-view"></use>

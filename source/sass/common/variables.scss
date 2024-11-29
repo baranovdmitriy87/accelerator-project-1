@@ -2,29 +2,30 @@
 $roboto: "Roboto Condensed", "Arial", sans-serif;
 $alumni: "Alumni Sans", "Arial", sans-serif;
 
-//Base color
-$base-white: #ffffff;
+// Base color
+$base-white: rgb(255, 255, 255);
+$base-black: rgba(0, 0, 0, 0);
 $base-dark-blue: #102654;
 
 // Text colors
-$text-tabs: #10265480;
-$text-tabs-hover: #102654B3;
-$text-additional: #103AAE;
-$text-secondary-gradient: linear-gradient(128.66deg, #d10a42 0%, #0041ca 45.491%);
+$text-tabs: rgba(16, 38, 84, 0.5);
+$text-tabs-hover: rgba(16, 38, 84, 0.7);
+$text-additional: rgb(16, 58, 174);
+$text-secondary-gradient: linear-gradient(128.66deg, #d10a42 0%, #0041ca 45.49%);
 
 // Background colors
 $bg-secondary-gray: #f8f9fc;
-$bg-banners: #ED0233;
-$bg-tab-btn-hover: linear-gradient(151.36deg, rgba(237, 2, 51, 0.8) 16.953%,rgba(0, 62, 183, 0.8) 96.592%);
-$bg-tab-btn: linear-gradient(151.36deg, rgb(237, 2, 51) 16.344%, rgb(0, 62, 183) 97.809%);
-$bg-tab-card-border: linear-gradient(147.36deg, rgb(237, 2, 51) -10.344%, rgb(0, 62, 183) 101.809%)25;
-$bg-main: linear-gradient(90.00deg, #1c3477, #1c3477 0.01%, #1a3578 39.106%, #73184b 75.502%, #b4022a 100%);
-$bg-video-gradient: linear-gradient(90deg, rgb(237, 2, 51) 13.982%, rgb(0, 62, 183) 100.498%) cadetblue;
-$bg-footer: #030A1A;
-$bg-secondary-block: #1C3374;
-$bg-button-border: linear-gradient(135.58deg, #d10a42 1.116%, #00359f 100%);
-$bg-video: #14367a80;
-$bg-video-tablet: #14367acc;
+$bg-banners: #ed0233;
+$bg-tab-btn-hover: linear-gradient(151.36deg, rgba(237, 2, 51, 0.8) 16.95%, rgba(0, 62, 183, 0.8) 96.59%);
+$bg-tab-btn: linear-gradient(151.36deg, rgb(237, 2, 51) 16.34%, rgb(0, 62, 183) 97.81%);
+$bg-tab-card-border: linear-gradient(147.36deg, rgb(237, 2, 51) -10.34%, rgb(0, 62, 183) 101.81%) 25;
+$bg-main: linear-gradient(90deg, #1c3477, #1c3477 0.01%, #1a3578 39.11%, #73184b 75.5%, #b4022a 100%);
+$bg-video-gradient: linear-gradient(90deg, rgb(237, 2, 51) 13.98%, rgb(0, 62, 183) 100.5%) rgb(95, 158, 160);
+$bg-footer: #030a1a;
+$bg-secondary-block: #1c3374;
+$bg-button-border: linear-gradient(135.58deg, #d10a42 1.12%, #00359f 100%);
+$bg-video: rgba(20, 54, 122, 0.5);
+$bg-video-tablet: rgba(20, 54, 122, 0.8);
 
 // Animation
 $tf-default: ease;
@@ -35,10 +36,10 @@ $border-width: 2px solid;
 $color-whisper: #e8e8e8;
 $color-grey: #787878;
 $light-grey: #e2e2e2;
-$error-color: #FF121F;
-$tabs-color: #D10A42;
-$base-dark-blue-hover: #10265499;
-$grey-focus: #C8C9CC;
+$error-color: #ff121f;
+$tabs-color: #d10a42;
+$base-dark-blue-hover: rgba(16, 38, 84, 0.6);
+$grey-focus: #c8c9cc;
 
 // Width-Viewports
 $mobile-width: 320px;

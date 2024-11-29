@@ -12,8 +12,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 44px 88px;
-
+    padding: 38px 88px;
   }
 }
 
@@ -36,6 +35,7 @@
 
 .footer__list {
   @include list-reset;
+
   display: flex;
   gap: 20px 36px;
   margin: 0 0 30px;
@@ -62,7 +62,7 @@
   line-height: 20px;
 
   @media (min-width: $tablet-width) {
-    line-height: 22px;
+    line-height: 23px;
   }
 
   &:hover {
@@ -80,6 +80,7 @@
 
 .footer__socials {
   @include list-reset;
+
   margin: 0;
   display: flex;
   gap: 20px;
@@ -102,7 +103,7 @@
 
   &--ok {
     background-image: url("/__spritemap#sprite-ok-view");
-    color: tomato;
+    color: rgb(255, 99, 71);
     fill: currentColor;
   }
 
@@ -111,13 +112,14 @@
   }
 
   &:hover {
-    color: tomato;
+    color: rgb(95, 83, 81);
     fill: currentColor;
   }
 }
 
 .footer__socials-link svg {
   color: currentColor;
+
   // fill: aqua;
   fill: currentColor;
   cursor: pointer;

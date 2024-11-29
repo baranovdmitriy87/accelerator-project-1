@@ -9,11 +9,11 @@ const toggleTabPrice = () => {
       });
       tab.classList.add('is-active');
       cardItems.forEach((item) => {
-        item.classList.add('is-hidden')
+        item.classList.add('is-hidden');
       });
-      cardItems[i].classList.remove('is-hidden')
+      cardItems[i].classList.remove('is-hidden');
     });
-  })
+  });
 };
 
 toggleTabPrice();
