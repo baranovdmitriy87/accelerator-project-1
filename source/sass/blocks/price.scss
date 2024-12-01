@@ -252,6 +252,15 @@
   }
 }
 
+.price__cards--data-position .price__card-price span {
+  &::before {
+    @media (min-width: $tablet-width) {
+      top: -31px;
+      left: -31px;
+    }
+  }
+}
+
 .price__card-price span {
   position: relative;
   color: $text-additional;
@@ -301,10 +310,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    font-size: 60px;
-  }
-
-  @media (min-width: $desktop-width) {
     font-size: 60px;
   }
 }

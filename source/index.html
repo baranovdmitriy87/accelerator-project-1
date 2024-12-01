@@ -50,7 +50,7 @@
           <source type="image/webp" media="(min-width: 768px)"
             srcset="./img/hero/hero-tablet.webp 1x, ./img/hero/hero-tablet@2x.webp 2x" width="324" height="390">
           <img class="hero__picture" src="./img/hero/hero-desktop.jpg" alt="Мужчина в футболке со знаком супермена."
-            width="500" height="524" srcset="./img/hero/hero-desktop@2x.jpg 2x">
+            width="500" height="524" srcset="./img/hero/hero-desktop@2x.jpg 2x" loading="lazy">
         </picture>
       </div>
     </div>
@@ -83,7 +83,7 @@
           width="320" height="280">
         <img class="about__image" src="./img/about/about-mobile.jpg"
           alt="Тренажёрный зал с большим количеством тренажёров." srcset="./img/about/about-mobile@2x.jpg 2x"
-          width="320" height="280">
+          width="320" height="280" loading="lazy">
       </picture>
 
       <div class="about__video" id="player">
@@ -99,11 +99,12 @@
             height="170">
           <img class="about__video-image" src="./img/about/about-video-mobile.jpg" width="320" height="170"
             alt="Тренажёрный зал с большим количеством разнообразных тренажёров."
-            srcset="./img/about/about-video-mobile@2x.jpg 2x">
+            srcset="./img/about/about-video-mobile@2x.jpg 2x" loading="lazy">
         </picture>
         <a class="about__link" href="https://www.youtube.com/watch?v=9TZXsZItgdw">
           <svg class="about__video-play-icon" width="72" height="72" role="img">
           </svg>
+          <span class="visually-hidden">Показать видео ролик</span>
         </a>
       </div>
     </div>
@@ -122,7 +123,7 @@
             height="328">
           <img class="price__picture" src="./img/price/price-gym-tablet.png"
             alt="Спортивные атлетические блины красного цвета." width="321" height="384"
-            srcset="./img/price/price-gym-tablet.png 2x">
+            srcset="./img/price/price-gym-tablet.png 2x" loading="lazy">
         </picture>
       </div>
       <h3 class="price__title">Абонементы</h3>
@@ -173,7 +174,7 @@
           </ul>
         </div>
 
-        <div class="price__cards price__cards--half-year is-hidden">
+        <div class="price__cards price__cards--data-position is-hidden">
           <ul class="price__cards-list">
             <li class="price__card-item">
               <h3 class="price__card-title">С тренером</h3>
@@ -205,7 +206,7 @@
           </ul>
         </div>
 
-        <div class="price__cards price__cards--year is-hidden">
+        <div class="price__cards price__cards--data-position is-hidden">
           <ul class="price__cards-list">
             <li class="price__card-item" tabindex="0">
               <h3 class="price__card-title">С тренером</h3>
